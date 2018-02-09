@@ -1,0 +1,266 @@
+i, em
+{
+	font-style: italic;
+}
+
+body 
+{
+	font-family: 'cooper_hewittmedium';
+	margin: 0px;
+}
+
+#backend_container 
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#menu 
+{
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	background-color: #000;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	overflow: hidden;
+	z-index: 8999;
+	height: 40px;
+}
+
+	#menu ul 
+	{
+		position: relative;
+		list-style-type: none;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-left: 0px;
+	}
+	
+	#menu li 
+	{
+		position: relative;
+		float: right;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+		#menu li img
+		{
+			position: relative;
+			width: 24px;
+			vertical-align: middle;
+		}
+	
+	#menu a 
+	{
+		text-decoration: underline;
+		color: inherit;
+	}
+	
+		#menu a:hover
+		{
+			font-weight: bold;
+		}
+
+#sidebar 
+{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	width: 250px;
+	border-right: solid 1px rgba(255, 255, 255, 0.8);
+	background-color: #000;
+	color:#fff;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+	.sidebar_logo
+	{
+		position: relative;
+		margin-top: 0px;
+		width: 100px;
+		margin-left: 70px;
+	}
+		.sidebar_logo img
+		{
+			vertical-align: middle;
+			width: 100%;
+		}
+
+	#sidebar ul 
+	{
+		position: relative;
+		list-style-type: none;
+		margin-top: 60px;
+		margin-bottom: 30px;
+		padding-left: 20px;
+	}
+	
+	.sidebar_headline 
+	{
+		position: relative;
+		font-size: 20px;
+		line-height: 1.4em;
+	}
+	
+	.sidebar_menuitem 
+	{
+		position: relative;
+		font-size: 16px;
+		line-height: 1.2em;
+		margin-left: 20px;
+	}
+	
+		.sidebar_menuitem a:hover
+		{
+			font-weight: bold;
+		}
+
+	.separator 
+	{
+		position: relative;
+		height: 30px;
+		width: 230px;
+	}
+	
+	#sidebar a 
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	#sidebar .submenu 
+	{
+		font-size: 17px;
+	}
+
+
+/********************************************************************************************************
+ * GLOBAL CONTENT
+ *******************************************************************************************************/
+#content 
+{
+	position: absolute;
+	left: 251px;
+	top: 40px;
+	padding: 20px;
+	min-width: 200px;
+	overflow: auto;
+}
+
+.content_h1 {
+	position: relative;
+	font-size: 20px;
+	color: #000000;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.content_h2 {
+	position: relative;
+	font-size: 13px;
+	color: #666666;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-style: italic;
+}
+
+.content_h3 {
+	position: relative;
+	font-size: 12px;
+	color: #000000;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+
+.custom_actions
+{
+	position: relative;
+	width: 100%;
+	color: #000000;
+	line-height: 40px;
+	font-size: 18px;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
+	.custom_actions ul
+	{
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+	}
+	
+	.custom_actions li
+	{
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+		border: solid 2px #ddd;
+		border-radius: 5px;
+		padding-left: 4px;
+		padding-right: 4px;
+		cursor: pointer;
+	}
+	
+	.custom_actions li:first-child
+	{
+		margin-left: 0px;
+	}
+	
+	.custom_actions li:hover
+	{
+		background-color: #f7f7f7;
+	}	
+
+	.custom_actions a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	
+.backendDialog
+{
+	font-size: 13px !important;
+}
+
+	.backendDialog .ui-dialog-content
+	{
+		padding: 1em 1em;
+	}
+
+	.backendDialog .ui-dialog-content .ui-icon
+	{
+		float: left;
+		margin: 0px 10px 0px 0px;
+	}
+
+
+#send_pw_user
+{
+	position: relative;
+    padding:5px;
+    width:100px;
+    text-align:center;
+    line-height: 20px;
+    background-color: #e7e7e7;
+    border: solid 1px #000000;
+    color: #000000;
+    margin-top: 30px;
+    cursor:pointer;
+}

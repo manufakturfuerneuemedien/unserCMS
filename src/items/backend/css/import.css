@@ -1,0 +1,110 @@
+
+
+	#artwork_search
+	{
+		position: relative;
+		margin-top: 15px;
+		overflow: hidden;
+	}
+	
+		#artwork_search_input
+		{
+			position: relative;
+			float: left;
+			font-size: 14px;
+			padding: 3px;
+			border: solid 2px #cecece;
+			height: 20px;
+		}
+		
+		#artwork_search_by
+		{
+			position: relative;
+			float: left;
+			font-size: 15px;
+			margin-left: 15px;
+			border: solid 2px #cecece;
+			padding: 2px 4px;
+			height: 30px;
+		}
+		
+		#artwork_search_button
+		{
+			position: relative;
+			float: left;
+			margin-left: 15px;
+			line-height: 22px;
+			border: solid 2px #000000;
+			background-color: #cecece;
+			padding: 2px 5px;
+			font-size: 15px;
+			cursor: pointer;
+			text-align: center;
+			width: 100px;
+		}
+		
+			#artwork_search_button:hover
+			{
+				font-weight: bold;
+			}
+		
+	#artwork_search_results
+	{
+		margin-top: 20px;
+	}	
+	
+		#artwork_search_results table
+		{
+			border-collapse: separate;
+			padding: 0px;
+			margin: 0px;
+			background-color: #cecece;
+		}
+		
+		#artwork_search_results table, #artwork_search_results td, #artwork_search_results th
+		{
+			border: solid 1px #cecece;
+		}
+		
+		#artwork_search_results td, #artwork_search_results th
+		{
+			background-color: #ffffff;
+		}
+		
+		#artwork_search_results th
+		{
+			width: 150px;
+		}
+		
+		#artwork_search_results th:first-child
+		{
+			width: 20px;
+		}
+	
+		.artwork_result_checkbox
+		{
+			width: 16px;
+			height: 16px;
+			margin: 2px;
+		}
+		
+	#artwork_search_control
+	{
+		margin-top: 25px;
+	}	
+	
+		.artwork_search_control_button
+		{
+			width: 200px;
+			border: solid 2px #cecece;
+			background-color: #000000;
+			color: #ffffff;
+			text-align: center;
+			line-height: 40px;
+			cursor: pointer;
+		}
+		
+		.artwork_search_control_button:hover
+		{
+			font-weight: bold;
+		}

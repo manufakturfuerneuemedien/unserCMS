@@ -1,0 +1,297 @@
+
+.has_placeholder:empty:not(:focus):before
+{
+    content: attr(data-text);
+	font-size: 14px;
+	color: #cecece;
+	font-weight: bold;
+}
+
+.unselectable
+{
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;	
+}
+
+.nofloat
+{
+	float: none !important;
+}
+
+	
+#menu_menu
+{
+	position: relative;
+	width: 98%;
+	padding: 0px 1%;
+	background-color: #ddd;
+	overflow: hidden;
+}
+
+	.menu_menu_item
+	{
+		position: relative;
+		float: left;
+		line-height: 30px;
+		font-size: 20px;
+	}
+	
+		.menu_menu_item select
+		{
+			position: relative;
+			float: left;
+			line-height: 26px;
+			font-size: 16px;
+			height: 22px;
+			margin: 4px 0px;
+			margin-left: 5px;
+			border: solid 1px #000000;
+		}
+	
+		.menu_menu_item_button
+		{
+			position: relative;
+			float: left;
+			background-color: #ffffff;
+			color: #000000;
+			margin: 4px 0px;
+			border: solid 1px #000000;
+			border-radius: 4px;
+			padding: 2px 6px;
+			cursor: pointer;
+			font-size: 16px;
+			height: 16px;
+			line-height: 16px;	
+			margin-left: 5px;
+		}
+	
+		.menu_menu_item span
+		{
+			float: left;
+		}
+		
+	.menu_menu_separator
+	{
+		position: relative;
+		float: left;
+		line-height: 30px;
+		font-size: 25px;
+		font-weight: bold;
+		margin: 0px 20px;
+		color: #ffffff;
+	}	
+			
+#menu_container
+{
+	position: relative;
+	width: 640px;
+	margin-top: 45px;
+	border: solid 1px #ddd;
+	padding: 15px 15px;
+}
+
+
+	.menu_menuitem
+	{
+		position: relative;
+		border: solid 1px #ddd;
+		width: 638px;
+		overflow: hidden;
+		height: 38px;
+	}
+	
+	.is_template
+	{
+		display: none;
+	}
+	
+	.menu_menuitem_anchor
+	{
+		position: relative;
+		float: left;
+		width: 38px;
+		margin-right: 17px;
+		cursor: pointer
+	}
+	
+		.menu_menuitem_anchor img
+		{
+			width: 38px;
+			height: 38px;
+		}
+	
+	
+	
+	.menu_menuitem_name
+	{
+		position: relative;
+		float: left;
+		width: 230px;
+		margin-right: 17px;
+	}
+		
+		.menu_menuitem_name input[type="text"]
+		{
+			position: relative;
+			float: left;
+			line-height: 26px;
+			font-size: 14px;
+			height: 26px;
+			margin: 5px 0px;
+			padding: 0px 3px;
+			border: solid 1px #000000;
+			width: 222px;
+		}
+	
+	.menu_menuitem_metatag
+	{
+		position: relative;
+		float: left;
+		width: 275px;
+		margin-right:17px;
+	}
+	
+		.menu_menuitem_metatag select
+		{
+			position: relative;
+			float: left;
+			line-height: 28px;
+			font-size: 14px;
+			height: 28px;
+			margin: 5px 0px;
+			border: solid 1px #000000;	
+			width: 273px;		
+		}
+		
+	.menu_menuitem_delete
+	{
+		position: relative;
+		float: left;
+		width: 30px;
+		cursor: pointer
+	}	
+
+		.menu_menuitem_delete img
+		{
+			margin-top: 4px;
+			width: 30px;
+			height: 30px;
+		}
+
+		
+#menu_copy_dialog
+{
+	position: fixed;
+	z-index: 9000;
+	top: 100px;
+	width: 300px;
+	height: auto;
+	left: 50%;
+	margin-left: -150px;
+	display: none;
+	background-color: #cecece;
+	border: solid 2px #000000;
+	padding: 15px;
+	overflow: hidden;
+}		
+
+	#menu_copy_dialog table
+	{
+		position: relative;
+		width: 100%;
+	}
+	
+		#menu_copy_dialog td
+		{
+			padding: 2px 0px;
+		}
+	
+	#menu_copy_copy, #menu_copy_cancel
+	{
+		width: 100px;
+		border: solid 2px #000000;
+		background-color: #ffffff; 		
+		text-align: center;
+		line-height: 20px;
+		cursor: pointer;	
+		margin: 10px auto 5px auto;
+	}
+	
+	
+#langlist
+{
+	position: relative;
+	margin-top: 20px;
+}
+
+	.langlist_item
+	{
+		position: relative;
+		width: 500px;
+		padding: 10px;
+		overflow: hidden;
+		border: solid 1px #ddd;
+	}
+	
+		.langlist_item_header
+		{
+			position: relative;
+			font-weight: bold;
+			font-size: 17px;
+			margin-bottom: 5px;
+			text-decoration: underline;
+		}
+		
+		.langlist_item_desc
+		{
+			position: relative;
+			float: left;
+			width: 180px;
+			line-height: 20px;
+			height: 20px;
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 3px;
+		}
+		
+		.langlist_item_text
+		{
+			position: relative;
+			float: left;
+			width: 320px;
+			line-height: 20px;
+			height: 20px;
+			font-size: 14px;
+			margin-bottom: 3px;
+		}
+		
+			.langlist_item_text input
+			{
+				width: 310px;
+				height: 14px;
+				line-height: 16px;
+				border: solid 1px #ddd;
+				padding: 2px 4px;
+				
+			}
+			
+		.langlist_item_subtext
+		{
+			position: relative;
+			float: left;
+			width: 320px;
+			height: 50px;
+			font-size: 14px;	
+		}
+
+			.langlist_item_subtext textarea
+			{
+				width: 310px;
+				height: 50px;
+				line-height: 16px;
+				border: solid 1px #ddd;
+				padding: 2px 4px;
+			}
