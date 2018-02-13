@@ -252,7 +252,7 @@ class Besc_crud
 	public function execute()
 	{
 		$this->prepare();
-		
+		 
 		switch($this->state_info->operation)
 		{
 			case 'list':

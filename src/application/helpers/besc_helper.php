@@ -29,7 +29,7 @@ function check_hash($hash, $stored_hash)
 {
     require_once (APPPATH . 'libraries/PasswordHash.php');
     $hasher = new PasswordHash(8, false);
-    return $hasher->CheckPassword($hash, $stored_hash);
+    return $hasher->CheckPassword($hash, $stored_hash); 
 }
 
 function purify($dirty_html)
