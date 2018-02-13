@@ -14,7 +14,7 @@ class Frontend extends MY_Controller
     
 	public function index()
 	{
-        $this->render->index();
+        $this->render->index(); 
 	}
     
 }
