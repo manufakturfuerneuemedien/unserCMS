@@ -1,11 +1,7 @@
 -- phpMyAdmin SQL Dump
 -- version 4.0.2
 -- http://www.phpmyadmin.net
---
--- Hoszt: localhost
--- Létrehozás ideje: 2018. Feb 09. 15:08
--- Szerver verzió: 5.6.14
--- PHP verzió: 5.5.38
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -16,17 +12,11 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
---
--- Adatbázis: `template`
---
+
 CREATE DATABASE IF NOT EXISTS `template` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `template`;
 
 -- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `ci_sessions`
---
 
 CREATE TABLE IF NOT EXISTS `ci_sessions` (
   `id` varchar(40) NOT NULL,
@@ -39,9 +29,6 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 
 -- --------------------------------------------------------
 
---
--- Tábla szerkezet ehhez a táblához `items`
---
 
 CREATE TABLE IF NOT EXISTS `items` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -53,10 +40,6 @@ CREATE TABLE IF NOT EXISTS `items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `module_headline`
---
 
 CREATE TABLE IF NOT EXISTS `module_headline` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
@@ -71,10 +54,6 @@ CREATE TABLE IF NOT EXISTS `module_headline` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `module_image`
---
 
 CREATE TABLE IF NOT EXISTS `module_image` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -91,9 +70,6 @@ CREATE TABLE IF NOT EXISTS `module_image` (
 
 -- --------------------------------------------------------
 
---
--- Tábla szerkezet ehhez a táblához `module_pdf`
---
 
 CREATE TABLE IF NOT EXISTS `module_pdf` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
@@ -108,10 +84,6 @@ CREATE TABLE IF NOT EXISTS `module_pdf` (
 
 -- --------------------------------------------------------
 
---
--- Tábla szerkezet ehhez a táblához `module_text`
---
-
 CREATE TABLE IF NOT EXISTS `module_text` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `parent` int(11) NOT NULL,
@@ -124,9 +96,25 @@ CREATE TABLE IF NOT EXISTS `module_text` (
 
 -- --------------------------------------------------------
 
---
--- Tábla szerkezet ehhez a táblához `module_video`
---
+
+CREATE TABLE `module_newsletter` (
+  `id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL,
+  `parent` int(1) NOT NULL DEFAULT '0',
+  `top` int(255) NOT NULL DEFAULT '999',
+  `type` int(1) NOT NULL DEFAULT '1',
+  `title` varchar(255) DEFAULT NULL,
+  `firstname` varchar(255) DEFAULT NULL,
+  `lastname` varchar(255) DEFAULT NULL,
+  `button_text` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `list_type` int(1) NOT NULL DEFAULT '1008802',
+  `success_message` varchar(255) NOT NULL DEFAULT 'Newsletter signup success'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+-- --------------------------------------------------------
+
 
 CREATE TABLE IF NOT EXISTS `module_video` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -140,9 +128,6 @@ CREATE TABLE IF NOT EXISTS `module_video` (
 
 -- --------------------------------------------------------
 
---
--- Tábla szerkezet ehhez a táblához `user`
---
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -157,9 +142,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
---
--- A tábla adatainak kiíratása `user`
---
+
 
 INSERT INTO `user` (`id`, `username`, `firstname`, `lastname`, `client_id`, `email`, `pword`, `is_admin`, `active_lang`) VALUES
 (1, 'admin', 'admin', 'admin', 1, 'admin@admin.com', '$2a$08$u3pqXwqsNcOukI5Xaulzpu1HkX8lmjgaU/sQWwlVHZME59QpwXdh6', 1, 1);
